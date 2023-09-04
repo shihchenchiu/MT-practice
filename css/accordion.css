@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* header active 的顏色 */
+.accordion {
+    --bs-accordion-active-bg: #212747;
+    --bs-accordion-active-color:white;
+}
+/* header 一般的顏色 */
+.accordion-button{
+    --bs-accordion-btn-bg: #212747;
+    --bs-accordion-btn-color: white;
+    font-size: 18px;
+
+}
+.x-accordion-heading .x-accordion-toggle {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.accordion-item{
+    border: 0;
+}
