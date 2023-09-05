@@ -193,7 +193,7 @@ p {
     width: 100%;
     display: block;
 }
-.banner{
+.banner-content{
     display: flex;
     align-items: center;
     width: 90%;
@@ -202,7 +202,7 @@ p {
 }
 .banner-img{
     width:69%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .banner-text{
     height: 80%;
