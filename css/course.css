@@ -179,7 +179,15 @@ p {
     width: 100%;
 }
 /* 共用區結束 */
-
+/* nav bar */
+#nav{
+    background-color: rgb(195, 193, 193);
+}
+#nav img{
+    margin: 0 auto;
+    object-fit: contain;
+    height: fit-content;
+}
 /* banner區 */
 #banner-container{
     width: 100%;
@@ -318,6 +326,7 @@ p {
 main{
     background-color: #F6F6F6;
     display: block;
+    padding-bottom: 3rem;
 }
 #introduction{
     flex:7;
@@ -414,6 +423,8 @@ main{
     overflow: hidden;
     padding-top: 5rem;
     margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 .comment-content{
     width: 80%;
@@ -429,20 +440,36 @@ main{
     margin-top: 1.5rem;
     font-size: 18px;
 }
-.comment .member{
-
+.comment-detail .member{
+    padding-left: .5rem;
 }
 .comment-area{
     background-color: white;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
     line-height: 3rem;
+    padding-left: .5rem;
 }
+.comment-area-sec{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
 /* aside 購買課程 */
 #aside{
     display: block;
     overflow: hidden;
     flex:3;
+}
+/* 動態效果 */
+#aside{
+    margin: 0px -30px;
+    padding: 0px 30px 20px;
+    position: sticky;
+    top: 96px;
+    max-height: calc(((100vh - 24px) - 80px) - 16px);
+    overflow-y: auto;
 }
 .one-course-container{
     margin-top: 2rem;
@@ -466,9 +493,9 @@ main{
     padding-top: 1rem;
 }
 .one-course-container img{
-    width: 100%;
+    width: 80%;
     display: block;
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 /* 單堂價格 */
 .one-course-container p:nth-of-type(1){
@@ -478,35 +505,24 @@ main{
 .one-course-title{
     font-size: 18px;
 }
-.one-course-container-content ul{
+.one-course-container-content ul, .two-course-container-content ul{
     margin-top: .5rem;
     line-height: 2;
 }
-/* aside 購物車按鈕 */
-/* .one-course-container button, .two-course-container button{
-    background-color: var(--orange-color);
-    height: 3.5rem;
-    color: #fff;
-    border: 0;
-    border-radius: .5rem;
-    padding: 0 1rem;
-    display: block;
-    margin: 0 auto;
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-    font-size: 18px;
-    width: 100%;
-} */
 .two-course-container{
     box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 2px 0px, rgba(0, 0, 0, 0.08) 0px 4px 10px 0px;
     border-radius: 8px;
     background-color: white;
+    margin-top: 2rem;
 }
 .two-course-container-content{
-    padding-bottom: .2rem;
+    padding-bottom: 1.2rem;
 }
 .two-course-container-content img{
     width: 50%;
+}
+.font-20{
+    font-size: 20px;
 }
 /* 合購的兩堂課程 文字和圖片左右排版 */
 .first-class, .second-class{
@@ -524,4 +540,15 @@ main{
     font-size: 18px;
     padding-left: .5rem;
 }
-
+/* 相關課程 */
+.like-content{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+/* footer */
+#footer{
+    display: block;
+    width: 100%;
+    background-color: var(--blue-color);
+    height: 10vh;
+}

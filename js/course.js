@@ -1,6 +1,6 @@
 // countdown.js 倒數計時設定
 function updateCountdown() {
-    const targetDate = new Date("2023-09-06T00:00:00"); // 設定目標日期和時間
+    const targetDate = new Date("2023-09-07T00:00:00"); // 設定目標日期和時間
     const currentDate = new Date();
 
     const timeDifference = targetDate - currentDate;
